@@ -18,10 +18,29 @@ docker-compose build
 docker-compose up
 ```
 
-### Unit tests
+Integration and unit tests run on the test container.
+
+## Using the client
+
+Provide an http.client and url to the constructor:
 
 ```
-cd integrations
-go test integrations/pkg/Form3
-go test integrations/pkg/Form3/Organisation
+import (
+	"integrations/pkg/Form3"
+	"net/http"
+)
+
+HttpClient := http.Client{}
+url = <SERVER_URL>
+
+client, _ := Form3.New(url, HttpClient)
 ```
+
+Now that you have an instance of the client, you can use the create, fetch and delete fucntions.
+
+For example, to fetch an account:
+```
+fetched_account, _ := client.FetchAccount(<ACCOUNT_ID>)
+```
+
+More examples available in Client_test.go

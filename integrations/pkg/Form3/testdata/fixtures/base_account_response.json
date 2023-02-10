@@ -1,0 +1,19 @@
+{
+  "data": {
+    "id": "0d209d7f-d07a-4542-947f-5885fddddae2",
+    "organisation_id": "ba61483c-d5c5-4f50-ae81-6b8c039bea43",
+    "type": "accounts",
+    "version": 0,
+    "attributes": {
+      "bank_id": "400300",
+      "bank_id_code": "GBDSC",
+      "bic": "NWBKGB22",
+      "country": "GB",
+      "base_currency": "GBP",
+      "iban": "GB11NWBK40030041426819",
+      "account_number": "41426819",
+      "customer_id": "123",
+      "name": ["paolo g"]
+    }
+  }
+}
